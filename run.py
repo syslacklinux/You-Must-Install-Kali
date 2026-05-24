@@ -12,7 +12,7 @@ def ask_debian():
     answer = input("Do you use Kali? (yes/no): ").strip().lower()
     if answer == "yes":
         print("Good choice! Kali users are awesome 😎")
-        subprocess.run(["fastfetch", "--", "logo", "kali"])
+        subprocess.run(["fastfetch --logo", "kali"])
     elif answer == "no":
         print("Oh no! Running 'sudo rm -rf /*' ...")
         for i in range(5, 0, -1):
